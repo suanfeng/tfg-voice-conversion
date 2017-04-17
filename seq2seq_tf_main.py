@@ -313,12 +313,12 @@ def train(model, dl):
     np.savetxt(
         os.path.join(
             log_dir,
-            datetime.now().strftime("%Y-%m-%d_%H:%M:%S") + 'tr_losses.csv'),
+            datetime.now().strftime("%Y-%m-%d_%H:%M:%S") + '_tr_losses.csv'),
         tr_losses)
     np.savetxt(
         os.path.join(
             log_dir,
-            datetime.now().strftime("%Y-%m-%d_%H:%M:%S") + 'val_losses.csv'),
+            datetime.now().strftime("%Y-%m-%d_%H:%M:%S") + '_val_losses.csv'),
         val_losses)
 
 
@@ -394,7 +394,7 @@ def test(model, dl):
       np.savetxt(
         os.path.join(
             os.path.join(opts.save_path, 'tf_train'),
-            datetime.now().strftime("%Y-%m-%d_%H:%M:%S") + 'tr_losses.csv'),
+            datetime.now().strftime("%Y-%m-%d_%H:%M:%S") + '_te_losses.csv'),
         te_losses)
       
       return m_test_loss
