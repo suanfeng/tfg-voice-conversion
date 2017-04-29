@@ -403,9 +403,6 @@ def test(model, dl):
           src_spk_index = int(src_batch[i, 0, 44])
           trg_spk_index = int(src_batch[i, 0, 45])
 
-          src_spk_max = dl.train_src_speakers_max[src_spk_index, :]
-          src_spk_min = dl.train_src_speakers_min[src_spk_index, :]
-
           trg_spk_max = dl.train_trg_speakers_max[trg_spk_index, :]
           trg_spk_min = dl.train_trg_speakers_min[trg_spk_index, :]
 
