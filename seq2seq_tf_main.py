@@ -53,7 +53,7 @@ if __name__ == '__main__':
   parser.add_argument('--rnn_size', type=int, default=256)
   parser.add_argument('--cell_type', type=str, default="lstm")
   parser.add_argument('--batch_size', type=int, default=20)
-  parser.add_argument('--epoch', type=int, default=100)
+  parser.add_argument('--epoch', type=int, default=30)
   parser.add_argument('--learning_rate', type=float, default=0.001)
   parser.add_argument('--dropout', type=float, default=0.5)
   parser.add_argument('--optimizer', type=str, default="adam")
